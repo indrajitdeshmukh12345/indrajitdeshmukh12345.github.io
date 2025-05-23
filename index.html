@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Indrajit Deshmukh - Resume</title>
+  <style>
+    :root {
+      --bg: #f4f4f9;
+      --text: #333;
+      --accent: #3498db;
+      --card: #ffffff;
+      --heading: #2c3e50;
+      --border: #ccc;
+      --link: #f39c12;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121212;
+        --text: #e0e0e0;
+        --accent: #2980b9;
+        --card: #1e1e1e;
+        --heading: #f4f4f9;
+        --border: #333;
+        --link: #f1c40f;
+      }
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h1, h2 {
+      color: var(--heading);
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 5px;
+      margin-top: 40px;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    .section {
+      margin-top: 30px;
+    }
+
+    .contact {
+      background: var(--card);
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 40px;
+    }
+
+    .contact a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    .download-btn {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-top: 20px;
+    }
+
+    .download-btn:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Indrajit Deshmukh</h1>
+    <p>Computer Science Student | Aspiring Data Scientist | Passionate about AI & ML</p>
+
+    <div class="section">
+      <h2>Skills</h2>
+      <ul>
+        <li>Programming: Python, Java</li>
+        <li>Machine Learning: scikit-learn, Orange</li>
+        <li>Web: HTML, CSS, basic JavaScript</li>
+        <li>Tools: Git, VS Code, IntelliJ</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Bike Buddies</strong> – Designed backend for managing bike technician callouts using Java.</li>
+        <li><strong>Store Profitability Classifier</strong> – Built ML models to predict store success using CRISP-DM methodology.</li>
+        <li><strong>2D Platformer Game</strong> – Java game using tile maps and custom level generation.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Education</h2>
+      <p><strong>BSc Computer Science</strong><br>
+      [Your University Name], Class of 2025</p>
+    </div>
+
+    <div class="section">
+      <h2>Resume</h2>
+      <a href="resume.pdf" class="download-btn" download>Download My Resume (PDF)</a>
+    </div>
+
+    <div class="contact">
+      <h2>Contact</h2>
+      <p>Email: youremail@example.com</p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+    </div>
+  </div>
+</body>
+</html>

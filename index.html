@@ -19,11 +19,11 @@
     }
 
     :root {
-      --bg: #0d0d0d; 
+      --bg: #0d0d0d;
       --text: #eaeaea;
       --card: rgba(255,255,255,0.05);
       --border: rgba(255,255,255,0.08);
-      --accent: #c7a17a;
+      --accent: #c7a17a; 
     }
 
     body.light {
@@ -377,6 +377,46 @@
       border-radius: 8px;
       margin-bottom: 10px;
     }
+/* CONTRIBUTIONS */
+.contributions-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.contribution-card {
+  width: 260px;
+  background: var(--card);
+  border-radius: 12px;
+  padding: 15px;
+  border: 1px solid var(--border);
+  text-decoration: none;
+  color: var(--text);
+  transition: 0.35s ease;
+}
+
+.contribution-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(63,216,109,0.35);
+}
+
+body.light .contribution-card:hover {
+  box-shadow: 0 15px 30px rgba(199,161,122,0.35); /* matches your brown accent */
+}
+
+.contribution-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.contribution-card h3 {
+  color: var(--accent);
+  margin-bottom: 6px;
+  font-size: 1.1em;
+}
+
 
     /* CONTACT FORM */
     .contact-form {
@@ -534,6 +574,20 @@
     </a>
 
   </div>
+  <!-- contributions -->
+<h2 class="reveal" style="margin-top:40px;">my <span class="highlight">contributions</span></h2>
+
+<div class="contributions-grid reveal">
+
+  <a class="contribution-card" href="https://www.kaggle.com/datasets/indrajit5454/hierarchical-multi-domain-image-dataset" target="_blank">
+    <img src="Screenshot 2026-01-22 162529.png" alt="Kaggle Dataset Screenshot">
+    <h3>Kaggle Dataset Contribution</h3>
+    <p>
+      Created and published aa large-scale, hierarchically annotated image collection. Each image is labeled using a multi-level semantic hierarchy, enabling research in hierarchical classification, fine-grained recognition, class imbalance analysis, and novel class detection.
+    </p>
+  </a>
+
+</div>
 
   <!-- CONTACT FORM -->
   <h2 class="reveal" style="margin-top:40px;">contact <span class="highlight">me</span></h2>
